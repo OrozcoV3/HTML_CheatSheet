@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML CheatSheet</title>
+  <link rel="shortcut icon" href="images/HTML_logo.png" type="image/favicon">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <a id="myBtn"></a>
+  <div>
+    <header>
+      <h1>HTML | HyperText Markup Language CheatSheet</h1>
+      <nav>
+        <ul>
+          <li><a href="#structures">STRUCTURES</a></li>
+          <li><a href="#text">TEXT</a></li>
+          <li><a href="#lists">LISTS</a></li>
+          <li><a href="#links">LINKS</a></li>
+          <li><a href="#images">IMAGES</a></li>
+          <li><a href="#tables">TABLES</a></li>
+          <li><a href="#forms">FORMS</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div>
+    <h2 id="structures">STRUCTURES</h2>
+      <h3>STRUCTURE OF PAGES</h3>
+        <table>
+          <tr>
+            <th>TAG</th>
+            <th>NAME</th>
+            <th>DESCRIPTION</th>
+          </tr>
+          <tr>
+            <td>&lt;html&gt; &lt;/html&gt;</td>
+            <td>HTML</td>
+            <td>Anything between opening & closing tag is HTML code.</td>
+          </tr>
+          <tr>
+            <td>&lt;head&gt; &lt;/head&gt;</td>
+            <td>HEAD</td>
+            <td>Contains information (metadata) about the document: titles, scripts, and style sheets.</td>
+          </tr>
+          <tr>
+            <td>&lt;title&gt; &lt;/title&gt;</td>
+            <td>TITLE</td>
+            <td>Located between head tags, title tags define a document's title that is shown in browser's tab.</td>
+          </tr>
+          <tr>
+            <td>&lt;body&gt; &lt;/body&gt;</td>
+            <td>BODY</td>
+            <td>Anything between the body tags are displayed inside the main browser window.</td>
+          </tr>
+          <tr>
+            <td>&lt;header&gt; &lt;/header&gt;</td>
+            <td>HEADER</td>
+            <td>Located in body tags, includes: introductory details, title, logo, search form, author name and other elements.</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt; &lt;/nav&gt;</td>
+            <td>NAVIGATION</td>
+            <td>Provides navigation links.</td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt; &lt;/footer&gt;</td>
+            <td>FOOTER</td>
+            <td>Contains information about the author of the section, copyright data or links to related documents.</td>
+          </tr>
+          <tr>
+            <td>&lt;article&gt; &lt;/article&gt;</td>
+            <td>ARTICLE</td>
+            <td>Include items for a forum post, magazine/newspaper article, blog entry or interactive widget/gadget.</td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt; &lt;/section&gt;</td>
+            <td>SECTION</td>
+            <td>Generic standalone section of a doc, no specific semantic element to represent it.</td>
+          </tr>
+        </table>
+      <p>For more elements visit: <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="mdn web docs">mdn web docs</a></p>
+      <hr />
+      <h3>STRUCTURE TEMPLATE</h3>
+      <div id="example1">
+        <pre>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+            &lt;title&gt;browserTitle&lt;title&gt;
+          &lt;/head&gt;
+        
+          &lt;body&gt;
+        
+            &lt;header&gt;
+              Title_Logo_OpeningDetails
+              &lt;nav&gt;
+                navigationMenu_inHeader
+              &lt;/nav&gt;
+            &lt;/header&gt;
+        
+            &lt;section&gt;
+              noSpecificSemantic
+        
+              &lt;article&gt;
+                post_article_blogEntry_links
+              &lt;/article&gt;
+        
+              &lt;article&gt;
+                
+        
+                &lt;aside&gt;
+                  &lt;blockquote&gt;
+                    blockquoteOutsideFlow
+                  &lt;/blockquote&gt;
+                &lt;/aside&gt;
+        
+              &lt;/article&gt;
+            &lt;/section&gt;
+        
+            &lt;footer&gt;
+              copyright_contact_email
+            &lt;/footer&gt;
+        
+          &lt;/body&gt;
+        
+        &lt;/html&gt;
+        </pre>
+      </div>
+  </div>
+  <div>
+    <h2 id="text">TEXT</h2>
+    <h3>MARKUP TEXT</h3>
+        <table>
+          <tr>
+            <th>TAG</th>
+            <th>NAME</th>
+            <th>DESCRIPTION</th>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; </td>
+            <td>HEADINGS</td>
+            <td>&lt;h1&gt; is used for main headings. &lt;h2&gt; is used for subheadings... etc for more subheadings.</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt; &lt;/p&gt;</td>
+            <td>PARAGRAPH</td>
+            <td>Represents a paragraph, can contain images or related content to text.</td>
+          </tr>
+          <tr>
+            <td>&lt;b&gt; &lt;/b&gt;</td>
+            <td>BOLD</td>
+            <td>Words enclosed in these tags make characters appear <b>bold.</b></td>
+          </tr>
+          <tr>
+            <td>&lt;i&gt; &lt;/i&gt;</td>
+            <td>ITALIC</td>
+            <td>Words enclosed in these tags make characters appear <i>italic.</i></td>
+          </tr>
+          <tr>
+            <td>&lt;sup&gt; &lt;/sup&gt;</td>
+            <td>SUPERSCRIPT</td>
+            <td>Used for superscript characters such as dates or mathematical concepts 2<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>&lt;sub&gt; &lt;/sub&gt;</td>
+            <td>SUBSCRIPT</td>
+            <td>Used for subscript characters for foot notes or chemical formulas such as H<sub>2</sub>O</td>
+          </tr>
+          <tr>
+            <td>&lt;br /&gt;</td>
+            <td>BREAK</td>
+            <td>The &lt;br /&gt; tag creates a line break inside the middle of a paragraph.</td>
+          </tr>
+          <tr>
+            <td>&lt;hr /&gt;</td>
+            <td>HORIZONTAL RULES</td>
+            <td>The &lt;hr /&gt; tag creates a break between themes or sections <hr /> and will create a line break.</td>
+          </tr>
+          <tr>
+            <td>&lt;strong&gt; &lt;/strong&gt;</td>
+            <td>STRONG</td>
+            <td>Element indicates that its content has strong importance. <strong>WARNING!</strong></td>
+          </tr>
+          <tr>
+            <td>&lt;em&gt; &lt;/em&gt;</td>
+            <td>EMPHASIS</td>
+            <td>Indicates <em>emphasis</em> and shows the characters in italic.</td>
+          </tr>
+          <tr>
+            <td>&lt;pre&gt; &lt;/pre&gt;</td>
+            <td>PRE-FORMATTED TEXT</td>
+            <td>Defines pre-formatted text with a fixed-width font, and preserves both spaces and breaks. Text will display exactly as written int he HTML source code.</td>
+          </tr>
+          <tr>
+            <td>&lt;blockquote&gt; &lt;/blockquote&gt;</td>
+            <td>BLOCKQUOTE</td>
+            <td>Used for longer quotes that take up an entire paragraph. Browsers will indent contents of a blockquote.</td>
+          </tr>
+          <tr>
+            <td>&lt;q&gt; &lt;/q&gt;</td>
+            <td>"QUOTES"</td>
+            <td>Element is used for shorter quotes. Browsers will place quotes around the &ltq&gt; element.</td>
+          </tr>
+          <tr>
+            <td>&lt;abbr&gt; &lt;/abbr&gt;</td>
+            <td>ABBREVIATION</td>
+            <td>Generic standalone section of a doc, no specific semantic element to represent it.</td>
+          </tr>
+          <tr>
+            <td>&lt;cite&gt; &lt;/cite&gt;</td>
+            <td>CITE</td>
+            <td>Represents a paragraph, can contain images or related content to text.</td>
+          </tr>
+          <tr>
+            <td>&lt;dfn&gt; &lt;/dfn&gt;</td>
+            <td>DEFINITION</td>
+            <td>Include items for a forum post, magazine/newspaper article, blog entry or interactive widget/gadget.</td>
+          </tr>
+          <tr>
+            <td>&lt;address&gt; &lt;/address&gt;</td>
+            <td>ADDRESS</td>
+            <td>Contains details for the author of the page. It can contain address, phone number and/or email.</td>
+          </tr>
+          <tr>
+            <td>&lt;ins&gt; &lt;/ins&gt;, &lt;del&gt; &lt;/del&gt;</td>
+            <td>INSERT & DELETE</td>
+            <td>&lt;ins&gt; Shows content that has been inserted into a document, while &lt;del&gt; shows text that has been deleted from it.</td>
+          </tr>
+          <tr>
+            <td>&lt;s&gt; &lt;/s&gt;</td>
+            <td>STRIKETHROUGH</td>
+            <td>&lt;s&gt; shows element that is no longer accurate or relevant, but should not be deleted. <s>strikethrough</s></td>
+          </tr>
+        </table>
+      <p>For more advanced text formatting visit: <a href= "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting" target="_blank" title="mdn web docs">mdn web docs</a>
+      <br />
+      For complete list of HTML Tags: <a href= "https://www.W3Schools.com/tags/tag_comment.asp" target="_blank" title="W3Schools">W3Schools</a></p>
+  </div>
+  <div>
+    <h2 id="lists">LISTS</h2>
+    <h3>LISTS</h3>
+        <table>
+          <tr>
+            <th>TAG</th>
+            <th>NAME</th>
+            <th>DESCRIPTION</th>
+          </tr>
+          <tr>
+            <td>&lt;ol&gt; &lt;/ol&gt;</td>
+            <td>ORDERED LIST</td>
+            <td>&lt;ol&gt; elements make each &lt;li&gt; a numbered list.</td>
+          </tr>
+          <tr>
+            <td>&lt;ul&gt; &lt;/ul&gt;</td>
+            <td>UNORDERED LIST</td>
+            <td>&lt;ul&gt; elements make each &lt;li&gt; a bulleted list. List attributes are indented by default. It is best to use the <a href="https://www.W3Schools.com/CSSref/pr_list-style-type.asp" title="CSS list-style-type">CSS list-style-type</a> property to modify the list specific attributes.</td>
+          </tr>
+          <tr>
+            <td>&lt;li&gt; &lt;/li&gt;</td>
+            <td>LIST</td>
+            <td>&lt;li&gt; are list elements and are nested in a &lt;ol&gt; or an &lt;ul&gt; element.</td>
+          </tr>
+          <tr>
+            <td>&lt;dl&gt; &lt;/dl&gt;</td>
+            <td>DEFINITION LIST</td>
+            <td>Consists of terms and their definitions.</td>
+          </tr>
+          <tr>
+            <td>&lt;dt&gt; &lt;/dt&gt;</td>
+            <td>DEFINITION TERM</td>
+            <td>Contains the term to be defined.</td>
+          </tr>
+          <tr>
+            <td>&lt;dd&gt; &lt;/dd&gt;</td>
+            <td>DEFINITION</td>
+            <td>Details the definition of a specific term.</td>
+          </tr>
+        </table>
+        <p>For more list formatting options visit: <a href= "https://www.tutorialbrain.com/html_tutorial/html_lists/" target="_blank" title="TutorialBrain">TutorialBrain</a> 
+        <br />
+        More list attributes: <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank" title="mdn web docs">mdn web docs</a></p>
+        <hr />
+      <h3>LIST TEMPLATES</h3>
+        <div id="example2">
+          <pre>
+            Unordered List (bullets):
+
+            &lt;ul&gt;
+              &lt;li&gt;bulletListItem&lt;/li&gt;
+              &lt;li&gt;bulletListItem&lt;/li&gt;
+              &lt;li&gt;bulletListItem&lt;/li&gt;
+            &lt;/ul&gt;
+            <hr />
+            Ordered List (numbers):
+
+            &lt;ol&gt;
+              &lt;li&gt;numberedListItem&lt;/li&gt;
+              &lt;li&gt;numberedListItem&lt;/li&gt;
+              &lt;li&gt;numberedListItem&lt;/li&gt;
+            &lt;/ol&gt;
+            <hr />
+            Definition List:
+
+            &lt;dl&gt;
+              &lt;dt&gt;definitionTerm&lt;/dt&gt;
+              &lt;dd&gt;definition&lt;/dd&gt;
+              &lt;dt&gt;definitionTerm&lt;/dt&gt;
+              &lt;dd&gt;definition&lt;/dd&gt;
+            &lt;/dl&gt;
+            <hr />
+            Nested List:
+
+            &lt;ul&gt;
+              &lt;li&gt;bulletListItem&lt;/li&gt;
+              &lt;li&gt;bulletListItem
+                &lt;ul&gt;
+                  &lt;li&gt;nestedList&lt;/li&gt;
+                  &lt;li&gt;nestedList&lt;/li&gt;
+                  &lt;li&gt;nestedList&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;bulletListItem&lt;/li&gt;
+            &lt;/ul&gt;
+          </pre>
+        </div>
+  </div>
+  <div>
+    <h2 id="links">LINKS</h2>
+    <h3>LINKS</h3>
+        <table>
+          <tr>
+            <th>TAG</th>
+            <th>NAME</th>
+            <th>DESCRIPTION</th>
+          </tr>
+          <tr>
+            <td>&lt;a&gt; &lt;/a&gt;</td>
+            <td>ABSOLUTE URL</td>
+            <td>The &lt;a&gt; element contains the value of the href attribute, which is the page you want users to visit when they click on the link. URL stands for Uniform Resource Locator. When linking to the same site, shorthand can be used to give the relative URL. <a href="#example3">See links template</a></td>
+          </tr>
+          <tr>
+            <td>mailto:</td>
+            <td>EMAIL</td>
+            <td>mailto: is used in the &lt;a&gt; element and addresses an email to a specified email address.</td>
+          </tr>
+          <tr>
+            <td>target="_blank"</td>
+            <td>TARGET</td>
+            <td>To open a link in a new window the target attribute follows the href attribute, used in the &lt;a&gt; element.</td>
+          </tr>
+          <tr>
+            <td>href="#"</td>
+            <td>LINK TO SAME PAGE</td>
+            <td>Used in the &lt;a&gt; element to link to a specific spot on the page. It is referenced to an id="" attribute. <a href="#example3">See links template</a></td>
+          </tr>
+          <tr>
+            <td>HREF="someurl.com/#bottom"</td>
+            <td>LINK TO ANOTHER PAGE</td>
+            <td>Add the id of another page to link specifically to that location. The id will link to the specified location. <a href="#example3">See links template</td>
+          </tr>
+        </table>
+        <p>For more hyperlink attributes & colors: <a href= "https://www.W3Schools.com/html/html_links.asp" target="_blank" title="W3Schools">W3Schools</a><br />
+        Another resource for creating hyperlinks: <a href= "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank" title="mdn web docs">mdn web docs</a></p>
+        <br />
+        <hr />
+      <h3>LINKS TEMPLATES</h3>
+        <div id="example3">
+          <pre>
+            Mailto:
+
+            &lt;p&gt;&lt;a href="mailto: enterEmailAddress_removeSpace"&gt;Contact&lt;/a&gt;&lt;/p&gt;
+            <hr />
+            Anchor attribute with target (new window):
+
+            &lt;a href="link" target="_blank"&gt;someURL&lt;a&gt;
+            <hr />
+            Link to specific location on webpage:
+
+            &lt;nav class="className"&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#id1"&gt;id1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#id2"&gt;id2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#id3"&gt;id3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+            
+
+            Place in desired location of webpage:
+
+            &lt;h2 id="id1"&gt;id1Name&lt;/h2&gt;
+            <hr />
+            Link to specific part of another page (if it has an id attribute for that location):
+
+            &lt;li&gt;&lt;a href="someURL.com/#link"&gt;linkName&lt;/a&gt;&lt;/li&gt;
+          </pre>
+        </div>
+  </div>
+  </div>
+  <div>
+    <h2 id="images">IMAGES</h2>
+    <div>
+      <h3>IMAGES</h3>
+      <table>
+        <tr>
+          <th>TAG</th>
+          <th>NAME</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+          <td>&lt;img src="imageLink" alt="alternateTextDescription"/&gt;</td>
+          <td>IMAGE</td>
+          <td>The &lt;img /&gt; attribute is a self closing tab, that allows for adding images to the webpage. It carries the src & alt attributes. A title="" attribute can be added to give additional information about the image.</td>
+        </tr>
+        <tr>
+          <td>width="300" height="150"</td>
+          <td>WIDTH & HEIGHT</td>
+          <td>Width & height attributes can be included in the &lt;img /&gt; attribute or written in css stylesheet.</td>
+        </tr>
+        <tr>
+          <td>&lt;figure&gt; &lt;/figure&gt;</td>
+          <td>FIGURE</td>
+          <td>Images that contain a caption are nested in the &lt;figure&gt; element.</td>
+        </tr>
+        <tr>
+          <td>&lt;figcaption&gt; &lt;/figcaption&gt;</td>
+          <td>FIGCAPTION</td>
+          <td>The &lt;figcaption&gt; element allows the option to add a caption for the image and is nested within the &lt;figure&gt; element.</td>
+        </tr>
+      </table>
+      <p>For more image attributes: <a href= "https://www.W3Schools.com/html/html_images.asp" target="_blank" title="W3Schools">W3Schools</a><br />
+      Another resource for embedding images in HTML: <a href= "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank" title="mdn web docs">mdn web docs</a></p>
+      <br />
+      <hr />
+    <h3>IMAGES TEMPLATES</h3>
+      <div id="example4">
+        <pre>
+          Image element (without title):
+
+          &lt;img src="imageLink" alt="alternateTextDescription"/&gt;
+          
+          <hr />
+          Image element (with title):
+          
+          &lt;img src="imageLink" alt="alternateTextDescription" title="imageTitle"/&gt;
+
+          <hr />
+          Image element (sizing attributes):
+          
+          &lt;img src="imageLink" alt="alternateTextDescription" title="imageTitle" width="200" height="150"/&gt;
+
+          <hr />
+          Figure & figcaption:
+          
+          &lt;figure&gt;
+            &lt;img src="imageLink" alt="alternateTextDescription"/&gt;
+            &lt;br /&gt;
+            &lt;figcaption&gt;imageDescription_Caption&lt;/figcaption&gt;
+          &lt;/figure&gt;
+        </pre>
+  </div>
+  <div>
+    <h2 id="tables">TABLES</h2>
+    <h3>TABLES</h3>
+      <table>
+        <tr>
+          <th>TAG</th>
+          <th>NAME</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+          <td>&lt;table&gt; &lt;/table&gt;</td>
+          <td>TABLE</td>
+          <td>This element holds all content for all HTML tables.</td>
+        </tr>
+        <tr>
+          <td>&lt;thead&gt; &lt;/thead&gt;</td>
+          <td>TABLE HEAD</td>
+          <td>Set of rows defining column headers in table.</td>
+        </tr>
+        <tr>
+          <td>&lt;tr&gt; &lt;/tr&gt;</td>
+          <td>TABLE ROW</td>
+          <td>Row of table, contains &lt;td&gt; data &lt;/td&gt;.</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt; &lt;/td&gt;</td>
+          <td>TABLE DATA</td>
+          <td>Data (or cell) inside a row, nested in &lt;tr&gt; &lt;/tr&gt; tags.</td>
+        </tr>
+        <tr>
+          <td>&lt;tf&gt; &lt;/tf&gt;</td>
+          <td>TABLE FOOT</td>
+          <td>Table footer row.</td>
+        </tr>
+        <tr>
+          <td>colspan</td>
+          <td>COLUMN SPAN</td>
+          <td>Sets number of <em>columns</em> &lt;td&gt; element should span.</td>
+        </tr>
+        <tr>
+          <td>rowspan</td>
+          <td>ROW SPAN</td>
+          <td>Sets number of <em>rows</em> &lt;td&gt; element should span.</td>
+        </tr>
+      </table>
+      <p>For more table tags & attributes: <a href= "https://www.W3Schools.com/html/html_tables.asp" target="_blank" title="W3Schools">W3Schools</a><br />
+      Another resource for creating tables: <a href= "https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics" target="_blank" title="mdn web docs">mdn web docs</a></p>
+      <br />
+      <hr />
+    <h3>TABLE TEMPLATE</h3>
+      <div id="example5">
+        <pre>
+          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;th&gt;tableHeader&lt;/th&gt;
+              &lt;th&gt;tableHeader&lt;/th&gt;
+              &lt;th&gt;tableHeader&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;tableData&lt;/th&gt;
+              &lt;td&gt;tableData&lt;/td&gt;
+              &lt;td&gt;tableData&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;tableData&lt;/th&gt;
+              &lt;td&gt;tableData&lt;/td&gt;
+              &lt;td&gt;tableData&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;tableData&lt;/th&gt;
+              &lt;td&gt;tableData&lt;/td&gt;
+              &lt;td&gt;tableData&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+
+        </pre>
+  </div>
+  <div>
+    <h2 id="forms">FORMS</h2>
+    <h3>FORMS</h3>
+      <table>
+        <tr>
+          <th>TAG</th>
+          <th>NAME</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+          <td>&lt;form&gt; &lt;/form&gt;</td>
+          <td>FORM</td>
+          <td>Controls for forms live inside &lt;form&gt; element, and usually contains a method and id attribute.</td>
+        </tr>
+        <tr>
+          <td>action="http://www.notarealLink.com/subscribe.php"</td>
+          <td>ACTION</td>
+          <td>Action states the URL location that information received in the form will be when submitted.</td>
+        </tr>
+        <tr>
+          <td>method="get" || method="post"</td>
+          <td>METHOD</td>
+          <td>Method will have two methods: <em>get</em> or <em>post</em>. <strong>get</strong> method is ideal for short forms or retrieving data from web server. <strong>post</strong> is ideal for long forms, user needs to upload a file, contains confidential data (such as passwords), and add/edits/deletes information from a database.</td>
+        </tr>
+        <tr>
+          <td>&lt;input type="text" name="username" size="8" maxlength="20" /&gt;</td>
+          <td>INPUT</td>
+          <td>The &lt;input&gt; element uses various form controls.</td>
+        </tr>
+        <tr>
+          <td>&lt;textarea&gt; &lt;/textarea&gt;</td>
+          <td>TEXT AREA</td>
+          <td>Text area creates multi-line text input and should have an opening and closing tag.</td>
+        </tr>
+        <tr>
+          <td>&lt;select&gt; &lt;/select&gt;</td>
+          <td>SELECT</td>
+          <td>Select allows a drop down list box for users to select one option.</td>
+        </tr>
+        <tr>
+          <td>&lt;option&gt; &lt;/option&gt;</td>
+          <td>OPTION</td>
+          <td>Option is nested between the &lt;select&gt; element tags and include details on choice options.</td>
+        </tr>
+      </table>
+      <p>
+        <b>Form Controls</b><br />
+
+        <strong>adding text</strong>: text input, password input, text area<br />
+
+        <strong>options</strong>: radio buttons, checkboxes, drop-down boxes<br />
+
+        <strong>submitting</strong>: submit buttons, image buttons, file upload<br />
+        <br />
+        For more input types: <a href= "https://www.w3schools.com/html/html_form_input_types.asp" target="_blank" title="W3Schools">W3Schools</a><br />
+        Another resource for creating forms: <a href= "https://www.tutorialspoint.com/html/html_forms.htm" target="_blank" title="Tutorials Point">Tutorials Point</a>
+      </p>
+      <br />
+  </div>
+  <footer>
+    <small>&copy; 2022, VLOrozco</small>
+  </footer>
+  </div>
+  <a href="#myBtn" title="Go to top"><i class="fa fa-chevron-up fa-3x"></i></a>
+</body>
+</html>

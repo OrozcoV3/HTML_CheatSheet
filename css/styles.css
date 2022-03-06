@@ -1,0 +1,213 @@
+* {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 16px;
+}
+
+header h1 {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  font-size: 40px;
+  background-color: #FF006E;
+  color: #fff;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding: 20px 20px;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li a,
+table a,
+p > a,
+a i {
+  cursor: url(https://www.gafcodes.com/premade/cursors/jspunkette/cursor19.cur), default;
+}
+
+nav li a:hover {
+    background-color: #6500C5;
+}
+
+h2 {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0 auto;
+  font-size: 30px;
+  color: #000;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+h3 {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  overflow: auto;
+}
+
+table {
+  width: 95%;
+}
+
+table, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table a {
+  color: #FF006E;
+}
+
+table a:hover {
+  color: #8338EC;
+}
+
+p {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0 auto;
+  color: #000;
+  overflow: auto;
+}
+
+p {
+  line-height: 220%;
+}
+
+p > a {
+  color: #FF006E;
+  text-decoration: underline dotted #FF006E;
+  text-decoration-thickness: 4px;
+}
+
+p > a:hover {
+    color: #8338EC;
+    text-decoration: underline dotted #8338EC;
+    text-decoration-thickness: 4px;
+}
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#example1,
+#example2,
+#example3,
+#example4,
+#example5 {
+  display: block;
+  width: 95%;
+  margin: 30px;
+  padding-top: 15px;
+  border-radius: 50px;
+}
+
+#structures, 
+#tables,
+#example1, 
+#example5 {
+  background-color: #FFBE0B;
+}
+
+#text, 
+#forms {
+  background-color: #FB5607;
+}
+
+#lists, 
+#example2 {
+  background-color: #FF006E;
+}
+
+#links, 
+#example3 {
+  background-color: #8338EC;
+}
+
+#images,
+#example4 {
+  background-color: #3A86FF;
+}
+
+a i {
+  display: block;
+  position: sticky;
+  float: right;
+  color: #000;
+  background-color: #FF006E;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 80px;
+  opacity: 0.8;
+  text-decoration: none;
+  z-index: 99;
+  padding: 10px;
+}
+
+a i:hover {
+  background-color: #6500C5;
+  border: none;
+  border-radius: 80px;
+}
+
+a i:active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  position: absolute;
+  width:100%;
+  text-align: left;
+  margin-left: 30px;
+}
